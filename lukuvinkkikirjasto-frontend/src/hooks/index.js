@@ -23,14 +23,19 @@ export const useResource = url => {
     const [resources, setResources] = useState([])
 
     const create = async data => {
-        console.log(data)
         const newResource = await axios.post(url, data)
         const updatedResources = resources.concat(newResource.data)
         setResources(updatedResources)
     }
 
+    const getAll = async () => {
+        const response = await axios.get(url)
+        setResources(response.data)
+    }
+
     const service = {
-        create
+        create,
+        getAll
     }
 
     return [resources, service]
