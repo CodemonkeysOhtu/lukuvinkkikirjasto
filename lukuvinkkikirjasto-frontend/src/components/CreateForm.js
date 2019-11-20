@@ -12,11 +12,11 @@ export const CreateForm = ({ vinkit, setVinkit }) => {
         e.preventDefault();
 
         setVinkit(vinkit.concat({
-            kirjoittaja,
-            otsikko,
-            isbn,
-            tagit,
-            related
+            kirjoittaja: kirjoittaja.value,
+            otsikko: otsikko.value,
+            isbn: isbn.value,
+            tagit: tagit.value.split(','),
+            related: related.value.split(',')
         }))
 
         kirjoittajaReset();
@@ -32,6 +32,7 @@ export const CreateForm = ({ vinkit, setVinkit }) => {
                 kirjoittaja:
                 <input {...kirjoittaja} />
             </label>
+
             <label>
                 otsikko:
                 <input {...otsikko} />
