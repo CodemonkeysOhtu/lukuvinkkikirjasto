@@ -1,7 +1,7 @@
 import React from 'react';
 import { useField } from '../hooks';
 
-export const CreateForm = ({ vinkit, setVinkit }) => {
+export const CreateForm = ({ booksService }) => {
     const [kirjoittaja, kirjoittajaReset] = useField('text')
     const [otsikko, otsikkoReset] = useField('text')
     const [isbn, isbnReset] = useField('text')
@@ -11,13 +11,14 @@ export const CreateForm = ({ vinkit, setVinkit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        setVinkit(vinkit.concat({
+        booksService.create({
+            id: Math.floor((Math.random() * 1000) + 1),
             kirjoittaja: kirjoittaja.value,
             otsikko: otsikko.value,
             isbn: isbn.value,
             tagit: tagit.value.split(','),
             related: related.value.split(',')
-        }))
+        })
 
         kirjoittajaReset();
         otsikkoReset();
