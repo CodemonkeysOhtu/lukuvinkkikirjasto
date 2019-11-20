@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Form } from 'semantic-ui-react';
 import { useField } from '../hooks';
 
 export const CreateForm = ({ booksService }) => {
@@ -28,30 +29,34 @@ export const CreateForm = ({ booksService }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                kirjoittaja:
+        <Form onSubmit={handleSubmit}>
+            <Form.Field>
+                <label>Kirjoittaja</label>
                 <input {...kirjoittaja} />
-            </label>
+            </Form.Field>
 
-            <label>
-                otsikko:
+            <Form.Field>
+                <label>Otsikko</label>
                 <input {...otsikko} />
-            </label>
-            <label>
-                isbn:
+            </Form.Field>
+
+            <Form.Field>
+                <label>ISBN</label>
                 <input {...isbn} />
-            </label>
-            <label>
-                tagit:
+            </Form.Field>
+
+            <Form.Field>
+                <label>Tagit</label>
                 <input {...tagit} />
-            </label>
-            <label>
-                related:
+            </Form.Field>
+
+            <Form.Field>
+                <label>Vastaavat kurssit</label>
                 <input {...related} />
-            </label>
-            <input type="submit" value="Submit" />
-        </form>
+            </Form.Field>
+
+            <Button positive type="submit" value="Submit">Lähetä</Button>
+        </Form>
     )
 
 }

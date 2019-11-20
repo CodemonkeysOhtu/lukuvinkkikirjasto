@@ -5,100 +5,32 @@
       "kirjoittaja": "Robert Martin",
       "otsikko": "Clean Code: A Handbook of Agile Software Craftsmanship",
       "isbn": "978-0132350884",
-      "tagit": [
-        "Ohjelmointi, design patterns, agile"
-      ],
-      "related": [
-        "TKT20006 Ohjelmistotuotanto"
-      ]
+      "tagit": ["Ohjelmointi, design patterns, agile"],
+      "related": ["TKT20006 Ohjelmistotuotanto"]
     },
     {
       "id": 89,
       "kirjoittaja": "Kent Beck",
       "otsikko": "Individuals and interactions",
       "isbn": "978-0132350884",
-      "tagit": [
-        "Ohjelmointi, design patterns, collaboration"
-      ],
-      "related": [
-        "TKT20006 Ohjelmistotuotanto"
-      ]
+      "tagit": ["Ohjelmointi, design patterns, collaboration"],
+      "related": ["TKT20006 Ohjelmistotuotanto"]
     },
     {
       "id": 91,
       "kirjoittaja": "James Grenning",
       "otsikko": "Working software",
       "isbn": "978-0132350884",
-      "tagit": [
-        "Ohjelmointi, design patterns, interaction"
-      ],
-      "related": [
-        "TKT20006 Ohjelmistotuotanto"
-      ]
+      "tagit": ["Ohjelmointi, design patterns, interaction"],
+      "related": ["TKT20006 Ohjelmistotuotanto"]
     },
     {
       "id": 92,
       "kirjoittaja": "Jim Highsmith",
       "otsikko": "Customer collaboration",
       "isbn": "978-0132350884",
-      "tagit": [
-        "Ohjelmointi, design patterns"
-      ],
-      "related": [
-        "TKT20006 Ohjelmistotuotanto"
-      ]
-    },
-    {
-      "id": 1,
-      "kirjoittaja": "1",
-      "otsikko": "2",
-      "isbn": "3",
-      "tagit": [
-        "4"
-      ],
-      "related": [
-        "5"
-      ]
-    },
-    {
-      "id": 93,
-      "kirjoittaja": "12",
-      "otsikko": "1",
-      "isbn": "2",
-      "tagit": [
-        "45",
-        "55",
-        "521"
-      ],
-      "related": [
-        "5"
-      ]
-    },
-    {
-      "id": 250,
-      "kirjoittaja": "moi",
-      "otsikko": "mai",
-      "isbn": "mui",
-      "tagit": [
-        "12",
-        "22",
-        "33"
-      ],
-      "related": [
-        "heii"
-      ]
-    },
-    {
-      "id": 102,
-      "kirjoittaja": "123",
-      "otsikko": "22",
-      "isbn": "33",
-      "tagit": [
-        "aa"
-      ],
-      "related": [
-        "dd"
-      ]
+      "tagit": ["Ohjelmointi, design patterns"],
+      "related": ["TKT20006 Ohjelmistotuotanto"]
     }
   ]
 }
