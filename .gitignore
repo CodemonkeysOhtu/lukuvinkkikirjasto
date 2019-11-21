@@ -24,6 +24,12 @@
 *.tar.gz
 *.rar
 
+# Builds
+/lukuvinkkikirjasto-backend/build/
+
+# Backend database
+/lukuvinkkikirjasto-backend/database.*
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
@@ -134,3 +140,8 @@ thumb
 sketch
 
 # End of https://www.gitignore.io/api/node,java,react
+/lukuvinkkikirjasto-backend/.nb-gradle/
+.gradle/
+
+# VSCode
+.vscode/
