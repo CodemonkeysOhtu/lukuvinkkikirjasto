@@ -15,6 +15,7 @@
     "@babel/preset-react": "^7.7.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
+    "cucumber": "^6.0.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "jest": "^24.9.0",
@@ -24,6 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "fute": "cucumber-js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,7 +45,11 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["json", "lcov", "text"],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text"
+    ],
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/node_modules/**",
