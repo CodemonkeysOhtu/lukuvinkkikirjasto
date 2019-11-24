@@ -1,1 +1,2 @@
+web: cd lukuvinkkikirjasto-frontend && npm i && npm run build && cp build ../lukuvinkkikirjasto-backend/src/main/resources/static
 java -Dserver.port=$PORT $JAVA_OPTS -jar lukuvinkkikirjasto-backend/build/libs/lukuvinkkikirjasto-backend.jar
