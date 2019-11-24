@@ -18,6 +18,12 @@ public class KirjaController {
     
     @Autowired
     private KirjaService kirjaService;
+
+    @GetMapping("/")
+    @ResponseBody
+    public String test() {
+        return "Hello, world!";
+    }
     
     /** Add new book
      * @param kirjoittaja book author
