@@ -3,7 +3,10 @@ package lukuvinkkikirjasto.controller;
 import java.util.List;
 import lukuvinkkikirjasto.entity.Kirja;
 import lukuvinkkikirjasto.service.KirjaService;
+
+import org.apache.tomcat.util.http.parser.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -41,6 +44,17 @@ public class KirjaController {
             return "ei kirjoja";
         }
         return "kirjoittaja: " + kirjat.get(id).getKirjoittaja() + "\notsikko: " +kirjat.get(id).getOtsikko();
+    }
+
+    @GetMapping(value = "/books", produces = "application/json")
+    @ResponseBody
+    public ResponseEntity<List<Kirja>> getBooks() {
+      List<Kirja> kirjat = kirjaService.haeKirjat();
+      if(kirjat == null || kirjat.size() == 0) {
+        return ResponseEntity.notFound().build();
+      }
+
+      return ResponseEntity.ok(kirjat);
     }
     
 }
