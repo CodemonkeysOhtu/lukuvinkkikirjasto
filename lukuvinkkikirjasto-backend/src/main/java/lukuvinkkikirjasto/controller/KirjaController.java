@@ -55,22 +55,22 @@ public class KirjaController {
         return "kirjoittaja: " + kirjat.get(id).getKirjoittaja() + "\notsikko: " +kirjat.get(id).getOtsikko();
     }
 
-    @RequestMapping(value = "/books", method = RequestMethod.GET, produces = "application/json")
-    @ResponseBody
-    public ResponseEntity<List<Kirja>> getBooks() {
-      List<Kirja> kirjat = kirjaService.haeKirjat();
-      if(kirjat == null || kirjat.size() == 0) {
-        return ResponseEntity.notFound().build();
-      }
+    // @RequestMapping(value = "/books", method = RequestMethod.GET, produces = "application/json")
+    // @ResponseBody
+    // public ResponseEntity<List<Kirja>> getBooks() {
+    //   List<Kirja> kirjat = kirjaService.haeKirjat();
+    //   if(kirjat == null || kirjat.size() == 0) {
+    //     return ResponseEntity.notFound().build();
+    //   }
 
-      return ResponseEntity.ok(kirjat);
-    }
+    //   return ResponseEntity.ok(kirjat);
+    // }
 
-    @RequestMapping(value = "/books", method = RequestMethod.POST, produces = "application/json")
-    @ResponseBody
-    public ResponseEntity postOne(@RequestBody Kirja kirja) {
-      kirjaService.tallennaKirja(kirja.getKirjoittaja(), kirja.getOtsikko());
-      return ResponseEntity.ok(kirja);
-    }
+    // @RequestMapping(value = "/books", method = RequestMethod.POST, produces = "application/json")
+    // @ResponseBody
+    // public ResponseEntity postOne(@RequestBody Kirja kirja) {
+    //   kirjaService.tallennaKirja(kirja.getKirjoittaja(), kirja.getOtsikko());
+    //   return ResponseEntity.ok(kirja);
+    // }
     
 }
