@@ -1,12 +1,12 @@
 # Development
 
-### Start frontend
+### Start frontend development version
 
 ```npm run start```
 
 Starts frontend by default on port 3000
 
-### Build frontend
+### Build production version
 
 ```npm run build```
 
