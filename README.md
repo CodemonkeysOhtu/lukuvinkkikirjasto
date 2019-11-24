@@ -17,3 +17,5 @@ Continuous integration is set up through CircleCI.
 [Architechture description]()
 
 [Frontend readme](/lukuvinkkikirjasto-frontend/README.md)
+
+[Backend readme](/lukuvinkkikirjasto-backend/README.md)
