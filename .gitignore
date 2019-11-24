@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/node,java,react
 # Edit at https://www.gitignore.io/?templates=node,java,react
 *.db
+.project
+.settings/
 ### Java ###
 # Compiled class file
 
