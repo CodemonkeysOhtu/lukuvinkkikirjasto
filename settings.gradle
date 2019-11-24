@@ -1,0 +1,4 @@
+rootProject.name = 'lukuvinkkikirjasto'
+
+include 'lukuvinkkikirjasto-backend'
+include 'lukuvinkkikirjasto-frontend'
