@@ -6,6 +6,7 @@
 .project
 .settings/
 application.properties
+build/
 ### Java ###
 # Compiled class file
 
