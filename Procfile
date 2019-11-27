@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/lukuvinkkikirjasto-backend.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -Dspring.profiles.active=production -jar build/libs/lukuvinkkikirjasto-backend.jar
