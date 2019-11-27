@@ -10,12 +10,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author salojuur
- */
+
 @Controller
 public class KirjaController {
     
@@ -52,7 +55,7 @@ public class KirjaController {
         return "kirjoittaja: " + kirjat.get(id).getKirjoittaja() + "\notsikko: " +kirjat.get(id).getOtsikko();
     }
 
-    @GetMapping(value = "/books", produces = "application/json")
+    @RequestMapping(value = "/books", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
     public ResponseEntity<List<Kirja>> getBooks() {
       List<Kirja> kirjat = kirjaService.haeKirjat();
@@ -61,6 +64,13 @@ public class KirjaController {
       }
 
       return ResponseEntity.ok(kirjat);
+    }
+
+    @RequestMapping(value = "/books", method = RequestMethod.POST, produces = "application/json")
+    @ResponseBody
+    public ResponseEntity postOne(@RequestBody Kirja kirja) {
+      kirjaService.tallennaKirja(kirja.getKirjoittaja(), kirja.getOtsikko());
+      return ResponseEntity.ok(kirja);
     }
     
 }
