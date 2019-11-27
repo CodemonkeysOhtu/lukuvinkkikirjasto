@@ -1,0 +1,8 @@
+POST https://lukuvinkkikirjasto-ohtu.herokuapp.com/books
+Content-Type: application/json
+
+
+{
+  "kirjoittaja": "Testikirjoittaja",
+  "otsikko": "Testiotsikko"
+}
