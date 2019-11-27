@@ -7,6 +7,7 @@
 .settings/
 application.properties
 build/
+database.mv.db
 ### Java ###
 # Compiled class file
 
