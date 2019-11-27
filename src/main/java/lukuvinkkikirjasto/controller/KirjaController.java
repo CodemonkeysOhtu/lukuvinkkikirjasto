@@ -57,7 +57,7 @@ public class KirjaController {
     public ResponseEntity<List<Kirja>> getBooks() {
       List<Kirja> kirjat = kirjaService.haeKirjat();
       if(kirjat == null || kirjat.size() == 0) {
-        return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(kirjat);
       }
 
       return ResponseEntity.ok(kirjat);
