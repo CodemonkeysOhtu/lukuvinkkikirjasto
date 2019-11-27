@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar lukuvinkkikirjasto-backend/build/libs/lukuvinkkikirjasto-backend.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/lukuvinkkikirjasto-backend.jar
