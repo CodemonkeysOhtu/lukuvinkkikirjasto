@@ -1,6 +1,10 @@
 ## Build backend
 
-TODO: ohjeet backendin buildaukseen
+```gradle build```
+
+tai
+
+```./gradlew build```
 
 ## Deploy backend
 
@@ -8,4 +12,8 @@ TODO: ohjeet backendin deployaukseen esim. Herokuun
 
 ## Backendin (kehitysversion) ajo lokaalisti
 
-TODO: ohjeet backendin käyttöön devauksen yhteydessä
+```gradle run```
+
+tai
+
+```./gradlew build```
