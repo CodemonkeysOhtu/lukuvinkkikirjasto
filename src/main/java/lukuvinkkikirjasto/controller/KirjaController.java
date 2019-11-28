@@ -55,7 +55,7 @@ public class KirjaController {
         return "kirjoittaja: " + kirjat.get(id).getKirjoittaja() + "\notsikko: " +kirjat.get(id).getOtsikko();
     }
 
-    @RequestMapping(value = "/books", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/kirjat", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
     public ResponseEntity<List<Kirja>> getBooks() {
       List<Kirja> kirjat = kirjaService.haeKirjat();
@@ -66,7 +66,7 @@ public class KirjaController {
       return ResponseEntity.ok(kirjat);
     }
 
-    @RequestMapping(value = "/books", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/kirjat", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResponseEntity postOne(@RequestBody Kirja kirja) {
       kirjaService.tallennaKirja(kirja.getKirjoittaja(), kirja.getOtsikko());
