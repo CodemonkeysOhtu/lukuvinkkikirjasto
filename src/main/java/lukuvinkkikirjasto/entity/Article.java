@@ -1,6 +1,7 @@
 package lukuvinkkikirjasto.entity;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -19,14 +20,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Article extends Bookmark implements Serializable {
     
-    @Column(name = "year")
-    private int year;
-    
-    @Column(name = "month")
-    private int month;
+    @Column(name = "localDate")
+    private LocalDate localDate;
     
     @Column(name = "publisher")
     private String publisher;
-    
     
 }

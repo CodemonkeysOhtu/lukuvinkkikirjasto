@@ -1,5 +1,6 @@
 package lukuvinkkikirjasto.service;
 
+import java.time.LocalDate;
 import java.util.List;
 import lukuvinkkikirjasto.entity.Article;
 import lukuvinkkikirjasto.repository.ArticleRepository;
@@ -19,13 +20,12 @@ public class ArticleService {
      * @param month month published
      * @param publisher journal/magazine etc. that published article
      */
-    public void saveArticle(String author, String title, int year, int month, String publisher) {
+    public void saveArticle(String author, String title, LocalDate localDate, String publisher) {
         
         Article article = new Article();
         article.setAuthor(author);
         article.setTitle(title);
-        article.setYear(year);
-        article.setMonth(month);
+        article.setLocalDate(localDate);
         article.setPublisher(publisher);
         articleRepository.save(article);
         
