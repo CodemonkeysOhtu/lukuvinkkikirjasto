@@ -30,8 +30,8 @@ public class VideoController {
 
     @RequestMapping(value = "/videos", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResponseEntity postOneBlogpost(@RequestBody Video video) {
-      videoService.saveVideo(video.getAuthor(), video.getTitle(), video.getUrl(), video.getComment());
-      return ResponseEntity.ok(video);
+    public ResponseEntity postOneVideo(@RequestBody Video video) {
+      Video savedVideo = videoService.saveVideo(video.getAuthor(), video.getTitle(), video.getUrl(), video.getComment());
+      return ResponseEntity.ok(savedVideo);
     }
 }
