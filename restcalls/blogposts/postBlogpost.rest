@@ -1,0 +1,9 @@
+POST http://localhost:8080/blogposts
+Content-Type: application/json
+
+
+{
+  "author": "testAuthor2",
+  "title": "testTitle2",
+  "url": "testUrl2"
+}

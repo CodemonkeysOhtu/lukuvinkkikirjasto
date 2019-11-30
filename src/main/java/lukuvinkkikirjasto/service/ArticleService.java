@@ -20,14 +20,14 @@ public class ArticleService {
      * @param month month published
      * @param publisher journal/magazine etc. that published article
      */
-    public void saveArticle(String author, String title, LocalDate localDate, String publisher) {
+    public Article saveArticle(String author, String title, LocalDate localDate, String publisher) {
         
         Article article = new Article();
         article.setAuthor(author);
         article.setTitle(title);
         article.setLocalDate(localDate);
         article.setPublisher(publisher);
-        articleRepository.save(article);
+        return articleRepository.save(article);
         
     }
     
