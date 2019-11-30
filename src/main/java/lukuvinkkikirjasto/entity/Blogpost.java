@@ -21,5 +21,8 @@ public class Blogpost extends Bookmark implements Serializable {
     
     @Column(name = "url")
     private String url;
+
+    @Column(name = "relatedCourses")
+    private String relatedCourses;
     
 }

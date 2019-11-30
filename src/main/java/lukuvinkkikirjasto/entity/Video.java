@@ -24,5 +24,8 @@ public class Video extends Bookmark implements Serializable {
     
     @Column(name = "comment")
     private String comment;
+
+    @Column(name = "relatedCourses")
+    private String relatedCourses;
     
 }

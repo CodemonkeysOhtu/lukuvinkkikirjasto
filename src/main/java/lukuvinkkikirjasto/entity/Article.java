@@ -26,4 +26,10 @@ public class Article extends Bookmark implements Serializable {
     @Column(name = "publisher")
     private String publisher;
     
+    @Column(name = "tagit")
+    private String tagit;
+
+    @Column(name = "related")
+    private String related;
+    
 }

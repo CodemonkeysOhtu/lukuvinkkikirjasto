@@ -12,14 +12,17 @@ public class BlogpostTest {
         String author = "Amit Solanki";
         String title = "Optional Chaining for Javascript - ES proposal";
         String url = "https://dev.to/iamsolankiamit/optional-chaining-for-javascript-es-proposal-3c26";
+        String relatedCourses = "course2";
         blogpost = new Blogpost();
         blogpost.setAuthor(author);
         blogpost.setTitle(title);
         blogpost.setUrl(url);
+        blogpost.setRelatedCourses(relatedCourses);
 
         assertEquals(blogpost.getAuthor(), author);
         assertEquals(blogpost.getTitle(), title);
         assertEquals(blogpost.getUrl(), url);
+        assertEquals(blogpost.getRelatedCourses(), relatedCourses);
     }
 }
 

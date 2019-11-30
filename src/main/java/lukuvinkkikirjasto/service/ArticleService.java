@@ -19,14 +19,18 @@ public class ArticleService {
      * @param year year published
      * @param month month published
      * @param publisher journal/magazine etc. that published article
+     * @param tagit user's tags
+     * @param related titles of related articles
      */
-    public Article saveArticle(String author, String title, LocalDate localDate, String publisher) {
+    public Article saveArticle(String author, String title, LocalDate localDate, String publisher, String tagit, String related) {
         
         Article article = new Article();
         article.setAuthor(author);
         article.setTitle(title);
         article.setLocalDate(localDate);
         article.setPublisher(publisher);
+        article.setTagit(tagit);
+        article.setRelated(related);
         return articleRepository.save(article);
         
     }
