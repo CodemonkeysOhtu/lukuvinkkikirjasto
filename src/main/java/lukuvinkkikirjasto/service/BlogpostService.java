@@ -13,12 +13,13 @@ public class BlogpostService {
     private BlogpostRepository blogpostRepository;
     
     /** save blogpost in database */
-    public Blogpost saveBlogpost(String author, String title, String url) {
+    public Blogpost saveBlogpost(String author, String title, String url, String relatedCourses) {
         
         Blogpost blogpost = new Blogpost();
         blogpost.setAuthor(author);
         blogpost.setTitle(title);
         blogpost.setUrl(url);
+        blogpost.setRelatedCourses(relatedCourses);
         return blogpostRepository.save(blogpost);
         
     }

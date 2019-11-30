@@ -27,7 +27,12 @@ public class Book extends Bookmark implements Serializable {
     
     @Column(name = "edition")
     private String edition;
+
+    @Column(name = "tagit")
+    private String tagit;
     
+    @Column(name = "related")
+    private String related;
 
     
 }

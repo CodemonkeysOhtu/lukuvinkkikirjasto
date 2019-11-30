@@ -13,13 +13,14 @@ public class VideoService {
     private VideoRepository videoRepository;
     
     /** save video in database */
-    public Video saveVideo(String author, String title, String url, String comment) {
+    public Video saveVideo(String author, String title, String url, String comment, String relatedCourses) {
         
         Video video = new Video();
         video.setAuthor(author);
         video.setTitle(title);
         video.setUrl(url);
         video.setComment(comment);
+        video.setRelatedCourses(relatedCourses);
         return videoRepository.save(video);
         
     }
