@@ -31,7 +31,7 @@ public class BlogpostController {
     @RequestMapping(value = "/blogposts", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResponseEntity postOneBlogpost(@RequestBody Blogpost blogpost) {
-      blogpostService.saveBlogpost(blogpost.getAuthor(), blogpost.getTitle(), blogpost.getUrl());
-      return ResponseEntity.ok(blogpost);
+      Blogpost savedBlogpost = blogpostService.saveBlogpost(blogpost.getAuthor(), blogpost.getTitle(), blogpost.getUrl());
+      return ResponseEntity.ok(savedBlogpost);
     }
 }

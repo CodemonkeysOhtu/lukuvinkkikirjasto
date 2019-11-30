@@ -31,7 +31,7 @@ public class ArticleController {
     @RequestMapping(value = "/articles", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResponseEntity postOneBlogpost(@RequestBody Article article) {
-      articleService.saveArticle(article.getAuthor(), article.getTitle(), article.getLocalDate(), article.getPublisher());
-      return ResponseEntity.ok(article);
+      Article savedArticle = articleService.saveArticle(article.getAuthor(), article.getTitle(), article.getLocalDate(), article.getPublisher());
+      return ResponseEntity.ok(savedArticle);
     }
 }

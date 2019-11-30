@@ -1,0 +1,10 @@
+POST http://localhost:8080/articles
+Content-Type: application/json
+
+
+{
+  "author": "testAuthor",
+  "title": "testTitle",
+  "localDate": "1999-12-03",
+  "publisher": "testPublisher"
+}

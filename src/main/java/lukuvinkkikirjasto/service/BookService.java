@@ -13,7 +13,7 @@ public class BookService {
     private BookRepository bookRepository;
     
     /** save book in database */
-    public void saveBook(String author, String title, String isbn, int year, String edition) {
+    public Book saveBook(String author, String title, String isbn, int year, String edition) {
         
         Book book = new Book();
         book.setAuthor(author);
@@ -21,7 +21,7 @@ public class BookService {
         book.setIsbn(isbn);
         book.setYear(year);
         book.setEdition(edition);
-        bookRepository.save(book);
+        return bookRepository.save(book);
         
     }
     
