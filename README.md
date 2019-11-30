@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto.svg?style=svg)](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto)
+
 ## Build backend
 
 ```gradle build```
