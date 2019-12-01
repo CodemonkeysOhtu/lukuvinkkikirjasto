@@ -44,3 +44,7 @@ tai
 
 ---------------------------
 [Frontend -repositorio](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto-frontend)
+
+[Lukuvinkkikirjasto -sovellus](https://lukuvinkkikirjasto.netlify.com/)
+
+[Backend Herokussa (vain API)](https://lukuvinkkikirjasto-ohtu.herokuapp.com/)
