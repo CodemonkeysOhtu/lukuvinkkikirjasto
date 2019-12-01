@@ -19,7 +19,7 @@ Continuous integration is set up through CircleCI.
 
 [Architechture description](/documentation/architecture.md)
 
-[Frontend readme](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto-frontend/README.md)
+[Frontend readme](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto-frontend/blob/master/README.md)
 
 
 ## Build backend
