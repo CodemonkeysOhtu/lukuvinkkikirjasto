@@ -19,3 +19,6 @@ TODO: ohjeet backendin deployaukseen esim. Herokuun
 tai
 
 ```./gradlew build```
+
+---------------------------
+[Frontend -repositorio](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto-frontend)
