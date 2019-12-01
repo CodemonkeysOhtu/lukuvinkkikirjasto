@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto.svg?style=svg)](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto)
+Backend [![CircleCI](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto.svg?style=svg)](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto)
+
+Frontend [![CircleCI](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto-frontend.svg?style=svg)](https://circleci.com/gh/CodemonkeysOhtu/lukuvinkkikirjasto-frontend)
 
 
 # Lukuvinkkikirjasto
@@ -13,9 +15,11 @@ Continuous integration is set up through CircleCI.
 
 [Backlog](https://docs.google.com/spreadsheets/d/1tENnlKtYbCaMsuIFtkuLRumiq6fCyp-DeZCgLi0Ofms/edit#gid=1)
 
+<!--- 
 [Instruction manual]()
 
 [Specification]()
+-->
 
 [Architechture description](/documentation/architecture.md)
 
@@ -26,7 +30,7 @@ Continuous integration is set up through CircleCI.
 
 ```gradle build```
 
-tai
+or
 
 ```./gradlew build```
 
@@ -34,17 +38,17 @@ tai
 
 TODO: ohjeet backendin deployaukseen esim. Herokuun
 
-## Backendin (kehitysversion) ajo lokaalisti
+## Run development version locally
 
 ```gradle run```
 
-tai
+or
 
-```./gradlew build```
+```./gradlew run```
 
 ---------------------------
-[Frontend -repositorio](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto-frontend)
+[Frontend repository](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto-frontend)
 
-[Lukuvinkkikirjasto -sovellus](https://lukuvinkkikirjasto.netlify.com/)
+[Lukuvinkkikirjasto application](https://lukuvinkkikirjasto.netlify.com/)
 
-[Backend Herokussa (vain API)](https://lukuvinkkikirjasto-ohtu.herokuapp.com/)
+[Backend in Heroku (only API)](https://lukuvinkkikirjasto-ohtu.herokuapp.com/)
