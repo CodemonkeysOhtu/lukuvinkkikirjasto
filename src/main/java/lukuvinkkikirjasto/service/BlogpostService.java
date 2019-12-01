@@ -20,6 +20,7 @@ public class BlogpostService {
         blogpost.setTitle(title);
         blogpost.setUrl(url);
         blogpost.setRelatedCourses(relatedCourses);
+        blogpost.setType("blogpost");
         return blogpostRepository.save(blogpost);
         
     }

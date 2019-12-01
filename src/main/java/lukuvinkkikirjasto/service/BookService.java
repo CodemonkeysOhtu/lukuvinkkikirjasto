@@ -23,6 +23,7 @@ public class BookService {
         book.setEdition(edition);
         book.setTagit(tagit);
         book.setRelated(related);
+        book.setType("book");
         return bookRepository.save(book);
         
     }
