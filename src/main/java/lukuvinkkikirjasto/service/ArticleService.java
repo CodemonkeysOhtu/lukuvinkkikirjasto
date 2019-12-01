@@ -16,8 +16,7 @@ public class ArticleService {
     /** save article in database
      * @param author article author
      * @param title article title
-     * @param year year published
-     * @param month month published
+     * @param localDate date published
      * @param publisher journal/magazine etc. that published article
      * @param tagit user's tags
      * @param related titles of related articles
@@ -31,6 +30,7 @@ public class ArticleService {
         article.setPublisher(publisher);
         article.setTagit(tagit);
         article.setRelated(related);
+        article.setType("article");
         return articleRepository.save(article);
         
     }

@@ -21,6 +21,7 @@ public class VideoService {
         video.setUrl(url);
         video.setComment(comment);
         video.setRelatedCourses(relatedCourses);
+        video.setType("video");
         return videoRepository.save(video);
         
     }

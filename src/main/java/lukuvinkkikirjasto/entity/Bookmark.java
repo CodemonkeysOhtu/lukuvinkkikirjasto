@@ -30,5 +30,7 @@ public abstract class Bookmark implements Serializable {
     
     @Column(name = "author")
     private String author;
-    
+
+    @Column(name = "type")
+    private String type;
 }
