@@ -13,7 +13,7 @@ public class BookService {
     private BookRepository bookRepository;
     
     /** save book in database */
-    public Book saveBook(String author, String title, String isbn, int year, String edition, String tagit, String related) {
+    public Book saveBook(String author, String title, String isbn, int year, String edition, List<String> tagit, List<String> related) {
         
         Book book = new Book();
         book.setAuthor(author);
@@ -26,6 +26,11 @@ public class BookService {
         book.setType("book");
         return bookRepository.save(book);
         
+    }
+
+    public Book saveBook(Book book) {
+      book.setType("book");
+      return bookRepository.save(book);
     }
     
     /** fetch all books from database */

@@ -30,8 +30,8 @@ public class BookController {
 
     @RequestMapping(value = "/books", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResponseEntity postOneBlogpost(@RequestBody Book book) {
-      Book savedBook = bookService.saveBook(book.getAuthor(), book.getTitle(), book.getIsbn(), book.getYear(), book.getEdition(), book.getTagit(), book.getRelated());
+    public ResponseEntity<Book> postOneBlogpost(@RequestBody Book book) {
+      Book savedBook = bookService.saveBook(book);
       return ResponseEntity.ok(savedBook);
     }
 }
