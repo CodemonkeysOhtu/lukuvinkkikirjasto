@@ -2,7 +2,10 @@ package lukuvinkkikirjasto.entity;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
+
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -27,9 +30,11 @@ public class Article extends Bookmark implements Serializable {
     private String publisher;
     
     @Column(name = "tagit")
-    private String tagit;
+    @ElementCollection
+    private List<String> tagit;
 
     @Column(name = "related")
-    private String related;
+    @ElementCollection
+    private List<String> related;
     
 }

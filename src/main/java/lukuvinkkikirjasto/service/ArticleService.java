@@ -21,7 +21,7 @@ public class ArticleService {
      * @param tagit user's tags
      * @param related titles of related articles
      */
-    public Article saveArticle(String author, String title, LocalDate localDate, String publisher, String tagit, String related) {
+    public Article saveArticle(String author, String title, LocalDate localDate, String publisher, List<String> tagit, List<String> related) {
         
         Article article = new Article();
         article.setAuthor(author);
@@ -33,6 +33,11 @@ public class ArticleService {
         article.setType("article");
         return articleRepository.save(article);
         
+    }
+
+    public Article saveArticle(Article article) {
+        article.setType("article");
+        return articleRepository.save(article);
     }
     
     /** fetch all articles from database */
