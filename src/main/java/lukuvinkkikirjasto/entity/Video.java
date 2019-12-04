@@ -1,7 +1,10 @@
 package lukuvinkkikirjasto.entity;
 
 import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,6 +29,7 @@ public class Video extends Bookmark implements Serializable {
     private String comment;
 
     @Column(name = "relatedCourses")
-    private String relatedCourses;
+    @ElementCollection
+    private List<String> relatedCourses;
     
 }

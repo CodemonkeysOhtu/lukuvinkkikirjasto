@@ -13,7 +13,7 @@ public class VideoService {
     private VideoRepository videoRepository;
     
     /** save video in database */
-    public Video saveVideo(String author, String title, String url, String comment, String relatedCourses) {
+    public Video saveVideo(String author, String title, String url, String comment, List<String> relatedCourses) {
         
         Video video = new Video();
         video.setAuthor(author);
@@ -24,6 +24,11 @@ public class VideoService {
         video.setType("video");
         return videoRepository.save(video);
         
+    }
+
+    public Video saveVideo(Video video) {
+        video.setType("video");
+        return videoRepository.save(video);
     }
     
     /** fetch all videos from database */
