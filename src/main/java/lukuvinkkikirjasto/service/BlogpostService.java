@@ -13,7 +13,7 @@ public class BlogpostService {
     private BlogpostRepository blogpostRepository;
     
     /** save blogpost in database */
-    public Blogpost saveBlogpost(String author, String title, String url, String relatedCourses) {
+    public Blogpost saveBlogpost(String author, String title, String url, List<String> relatedCourses) {
         
         Blogpost blogpost = new Blogpost();
         blogpost.setAuthor(author);
@@ -23,6 +23,11 @@ public class BlogpostService {
         blogpost.setType("blogpost");
         return blogpostRepository.save(blogpost);
         
+    }
+
+    public Blogpost saveBlogpost(Blogpost blogpost) {
+        blogpost.setType("blogpost");
+        return blogpostRepository.save(blogpost);
     }
     
     /** fetch all blogposts from database */
