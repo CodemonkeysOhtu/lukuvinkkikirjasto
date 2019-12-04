@@ -4,6 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BookTest {
     private Book book;
 
@@ -14,8 +17,10 @@ public class BookTest {
         String isbn = "978-0132350884";
         int year = 2008;
         String edition = "1"; 
-        String tagit = "tags";
-        String related = "Another boook";
+        List<String> tagit = new ArrayList<>();
+        tagit.add("tags");
+        List<String> related = new ArrayList<>();
+        related.add("Another boook");
         book = new Book();
         book.setAuthor(author);
         book.setTitle(title);

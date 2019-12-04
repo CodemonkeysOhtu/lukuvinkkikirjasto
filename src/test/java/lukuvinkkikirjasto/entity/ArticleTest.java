@@ -3,6 +3,9 @@ package lukuvinkkikirjasto.entity;
 import org.junit.Before;
 import org.junit.Test;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class ArticleTest {
@@ -14,8 +17,10 @@ public class ArticleTest {
         String title = "An Introduction To: Agile Software Development";
         String publisher = "SheCanCode";
         LocalDate localDate = LocalDate.of(2017,11,30);
-        String tagit = "tags";
-        String related = "Another Article";
+        List<String> tagit = new ArrayList<>();
+        tagit.add("tags");
+        List<String> related = new ArrayList<>();
+        related.add("Another Article");
         article = new Article();
         article.setAuthor(author);
         article.setTitle(title);

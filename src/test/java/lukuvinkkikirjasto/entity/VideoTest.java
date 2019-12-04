@@ -4,6 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class VideoTest {
     private Video video;
 
@@ -13,7 +16,8 @@ public class VideoTest {
         String title = "What is Agile?";
         String url = "https://youtu.be/Z9QbYZh1YXY";
         String comment = "Good.";
-        String relatedCourses = "Another video";
+        List<String> relatedCourses = new ArrayList<>();
+        relatedCourses.add("Another video");
         video = new Video();
         video.setAuthor(author);
         video.setTitle(title);

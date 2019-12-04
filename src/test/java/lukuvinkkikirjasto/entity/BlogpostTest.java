@@ -2,7 +2,11 @@ package lukuvinkkikirjasto.entity;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BlogpostTest {
     private Blogpost blogpost;
@@ -12,7 +16,8 @@ public class BlogpostTest {
         String author = "Amit Solanki";
         String title = "Optional Chaining for Javascript - ES proposal";
         String url = "https://dev.to/iamsolankiamit/optional-chaining-for-javascript-es-proposal-3c26";
-        String relatedCourses = "course2";
+        List<String> relatedCourses = new ArrayList<>();
+        relatedCourses.add("course2");
         blogpost = new Blogpost();
         blogpost.setAuthor(author);
         blogpost.setTitle(title);
