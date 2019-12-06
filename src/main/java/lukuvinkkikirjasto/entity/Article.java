@@ -1,6 +1,7 @@
 package lukuvinkkikirjasto.entity;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -12,7 +13,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
- * Blogpost entity, inherits superclass Bookmark
+ * Article entity, inherits superclass Bookmark
  * @author salojuur
  */
 @Entity
@@ -20,13 +21,20 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper=false)
 @NoArgsConstructor
 @AllArgsConstructor
-public class Blogpost extends Bookmark implements Serializable {
+public class Article extends Bookmark implements Serializable {
     
-    @Column(name = "url")
-    private String url;
-
-    @Column(name = "relatedCourses")
+    @Column(name = "localDate")
+    private LocalDate localDate;
+    
+    @Column(name = "publisher")
+    private String publisher;
+    
+    @Column(name = "tagit")
     @ElementCollection
-    private List<String> relatedCourses;
+    private List<String> tagit;
+
+    @Column(name = "related")
+    @ElementCollection
+    private List<String> related;
     
 }

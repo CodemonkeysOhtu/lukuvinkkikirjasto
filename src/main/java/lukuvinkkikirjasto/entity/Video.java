@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
- * Blogpost entity, inherits superclass Bookmark
+ * Video entity, inherits superclass Bookmark
  * @author salojuur
  */
 @Entity
@@ -20,10 +20,13 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper=false)
 @NoArgsConstructor
 @AllArgsConstructor
-public class Blogpost extends Bookmark implements Serializable {
+public class Video extends Bookmark implements Serializable {
     
     @Column(name = "url")
     private String url;
+    
+    @Column(name = "comment")
+    private String comment;
 
     @Column(name = "relatedCourses")
     @ElementCollection

@@ -1,0 +1,10 @@
+POST http://localhost:8080/videos
+Content-Type: application/json
+
+
+{
+  "title": "titleTest3",
+  "author": "authorTest3",
+  "url": "www.test3.com",
+  "comment": "testComment3"
+}
