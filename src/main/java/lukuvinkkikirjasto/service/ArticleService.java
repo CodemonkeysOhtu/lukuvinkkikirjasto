@@ -5,6 +5,7 @@ import java.util.List;
 import lukuvinkkikirjasto.entity.Article;
 import lukuvinkkikirjasto.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -48,6 +49,16 @@ public class ArticleService {
     /** fetch an article by id from database */
     public Article getArticle(Long id) {
         return articleRepository.getOne(id);
+    }
+
+    public boolean deleteById(Long id) {
+        try {
+          articleRepository.deleteById(id);
+        } catch(Exception e) {
+          return false;
+        }
+
+        return true;
     }
     
 }

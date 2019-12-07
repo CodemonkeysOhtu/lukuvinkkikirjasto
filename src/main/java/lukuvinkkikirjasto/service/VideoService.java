@@ -40,5 +40,15 @@ public class VideoService {
     public Video getBlogpost(Long id) {
         return videoRepository.getOne(id);
     }
+
+    public boolean deleteById(Long id) {
+      try {
+        videoRepository.deleteById(id);
+      } catch(Exception e) {
+        return false;
+      }
+
+      return true;
+    }
     
 }

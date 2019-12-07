@@ -42,5 +42,15 @@ public class BookService {
     public Book getBook(Long id) {
         return bookRepository.getOne(id);
     }
+
+    public boolean deleteById(Long id) {
+      try {
+        bookRepository.deleteById(id);
+      } catch(Exception e) {
+        return false;
+      }
+
+      return true;
+    }
     
 }

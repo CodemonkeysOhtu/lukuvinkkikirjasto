@@ -39,5 +39,15 @@ public class BlogpostService {
     public Blogpost getBlogpost(Long id) {
         return blogpostRepository.getOne(id);
     }
+
+    public boolean deleteById(Long id) {
+      try {
+        blogpostRepository.deleteById(id);
+      } catch(Exception e) {
+        return false;
+      }
+
+      return true;
+    }
     
 }
