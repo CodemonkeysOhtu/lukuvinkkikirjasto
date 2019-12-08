@@ -25,6 +25,10 @@ public class Blogpost extends Bookmark implements Serializable {
     @Column(name = "url")
     private String url;
 
+    @Column(name = "tagit")
+    @ElementCollection
+    private List<String> tagit;
+
     @Column(name = "relatedCourses")
     @ElementCollection
     private List<String> relatedCourses;
