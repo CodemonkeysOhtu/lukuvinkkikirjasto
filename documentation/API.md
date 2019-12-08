@@ -23,4 +23,4 @@
 
 | Method | url | response |
 | --- | --- | --- |
-| POST | `/books/{id}` <br> `/articles/{id}` <br> `/videos/{id}` <br> `/blogposts/{id}` | On success: return added object in JSON format |
+| POST | `/books` <br> `/articles` <br> `/videos` <br> `/blogposts` | On success: return added object in JSON format |
