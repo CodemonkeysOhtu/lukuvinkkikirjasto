@@ -28,6 +28,10 @@ public class Video extends Bookmark implements Serializable {
     @Column(name = "comment")
     private String comment;
 
+    @Column(name = "tagit")
+    @ElementCollection
+    private List<String> tagit;
+
     @Column(name = "relatedCourses")
     @ElementCollection
     private List<String> relatedCourses;
