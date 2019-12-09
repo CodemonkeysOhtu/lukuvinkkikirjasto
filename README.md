@@ -55,4 +55,6 @@ or
 
 [Backend in Heroku (only API)](https://lukuvinkkikirjasto-ohtu.herokuapp.com/)
 
+[Unit tests](/documentation/tests/test/index.html)
+
 [License](LICENSE)

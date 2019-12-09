@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class lukuvinkkikirjasto.repository.BookRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class lukuvinkkikirjasto.repository.BookRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/lukuvinkkikirjasto.repository.html">lukuvinkkikirjasto.repository</a> &gt; BookRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.468s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">bookRepositoryWorks</td>
+<td class="success">0.468s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:29:21.492 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.505 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:29:21.520 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:29:21.609 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [lukuvinkkikirjasto.repository.BookRepositoryTest] from class [org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper]
+21:29:21.648 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lukuvinkkikirjasto.repository.BookRepositoryTest], using SpringBootContextLoader
+21:29:21.658 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]: class path resource [lukuvinkkikirjasto/repository/BookRepositoryTest-context.xml] does not exist
+21:29:21.658 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]: class path resource [lukuvinkkikirjasto/repository/BookRepositoryTestContext.groovy] does not exist
+21:29:21.659 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:29:21.660 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]: BookRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:29:21.757 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.878 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/salojuur/courses/ohjelmistotuotanto/lukuvinkkikirjasto/build/classes/java/main/lukuvinkkikirjasto/Main.class]
+21:29:21.880 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lukuvinkkikirjasto.Main for test class lukuvinkkikirjasto.repository.BookRepositoryTest
+21:29:21.882 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - @TestExecutionListeners is not present for class [lukuvinkkikirjasto.repository.BookRepositoryTest]: using defaults.
+21:29:21.883 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+21:29:21.916 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f2c5367, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9271e42, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c54a95a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7828f739, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55323430, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6456e5da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1db19e73, org.springframework.test.context.event.EventPublishingTestExecutionListener@229f33c3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66c80014, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35e34122, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@243003eb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7f6a3d85, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@59844adc]
+21:29:21.921 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.922 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.923 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.923 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.929 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@760d26d1 testClass = BookRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6a4eb158 testClass = BookRepositoryTest, locations = '{}', classes = '{class lukuvinkkikirjasto.Main}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@10575113, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ed69e92f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4d65ac28, [ImportsContextCustomizer@4c4f6f98 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@f54f2fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@51add917, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+21:29:21.932 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.932 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [lukuvinkkikirjasto.repository.BookRepositoryTest]
+21:29:21.940 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@760d26d1 testClass = BookRepositoryTest, testInstance = lukuvinkkikirjasto.repository.BookRepositoryTest@28b7f36a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6a4eb158 testClass = BookRepositoryTest, locations = '{}', classes = '{class lukuvinkkikirjasto.Main}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@10575113, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ed69e92f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4d65ac28, [ImportsContextCustomizer@4c4f6f98 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@f54f2fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@51add917, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+21:29:22.130 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.1.RELEASE)
+
+2019-12-09 21:29:22.594  INFO 16126 --- [    Test worker] l.repository.BookRepositoryTest          : Starting BookRepositoryTest on lx9-fuxi103 with PID 16126 (started by salojuur in /home/salojuur/courses/ohjelmistotuotanto/lukuvinkkikirjasto)
+2019-12-09 21:29:22.599  INFO 16126 --- [    Test worker] l.repository.BookRepositoryTest          : No active profile set, falling back to default profiles: default
+2019-12-09 21:29:23.115  INFO 16126 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-09 21:29:23.276  INFO 16126 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 4 repository interfaces.
+2019-12-09 21:29:23.361  INFO 16126 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2019-12-09 21:29:23.661  INFO 16126 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:58f7638c-a8e9-486d-85ca-9ffdafd3d64e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2019-12-09 21:29:24.282  INFO 16126 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-09 21:29:24.427  INFO 16126 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-09 21:29:24.689  INFO 16126 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-09 21:29:24.890  INFO 16126 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table article if exists
+Hibernate: drop table article_related if exists
+Hibernate: drop table article_tagit if exists
+Hibernate: drop table blogpost if exists
+Hibernate: drop table blogpost_related_courses if exists
+Hibernate: drop table blogpost_tagit if exists
+Hibernate: drop table book if exists
+Hibernate: drop table book_related if exists
+Hibernate: drop table book_tagit if exists
+Hibernate: drop table video if exists
+Hibernate: drop table video_related_courses if exists
+Hibernate: drop table video_tagit if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table article (id bigint not null, author varchar(255), title varchar(255), type varchar(255), local_date date, publisher varchar(255), primary key (id))
+Hibernate: create table article_related (article_id bigint not null, related varchar(255))
+Hibernate: create table article_tagit (article_id bigint not null, tagit varchar(255))
+Hibernate: create table blogpost (id bigint not null, author varchar(255), title varchar(255), type varchar(255), url varchar(255), primary key (id))
+Hibernate: create table blogpost_related_courses (blogpost_id bigint not null, related_courses varchar(255))
+Hibernate: create table blogpost_tagit (blogpost_id bigint not null, tagit varchar(255))
+Hibernate: create table book (id bigint not null, author varchar(255), title varchar(255), type varchar(255), edition varchar(255), isbn varchar(255), year integer, primary key (id))
+Hibernate: create table book_related (book_id bigint not null, related varchar(255))
+Hibernate: create table book_tagit (book_id bigint not null, tagit varchar(255))
+Hibernate: create table video (id bigint not null, author varchar(255), title varchar(255), type varchar(255), comment varchar(255), url varchar(255), primary key (id))
+Hibernate: create table video_related_courses (video_id bigint not null, related_courses varchar(255))
+Hibernate: create table video_tagit (video_id bigint not null, tagit varchar(255))
+Hibernate: alter table article_related add constraint FKcmj23f52rfg3uo4go5h794qcn foreign key (article_id) references article
+Hibernate: alter table article_tagit add constraint FK5x4kku4k9ofrvkiiqerk5meei foreign key (article_id) references article
+Hibernate: alter table blogpost_related_courses add constraint FK5iuu6o51wuniq4x5j6m09jdp8 foreign key (blogpost_id) references blogpost
+Hibernate: alter table blogpost_tagit add constraint FKn3gp4uebcm1q2h8da7sf8a6g1 foreign key (blogpost_id) references blogpost
+Hibernate: alter table book_related add constraint FKddmj9wlbm6velagdyi2n255j4 foreign key (book_id) references book
+Hibernate: alter table book_tagit add constraint FK2avf4sl7pu71vfikwwva4ctog foreign key (book_id) references book
+Hibernate: alter table video_related_courses add constraint FKr9m7xjtkvuni1le3aima0swt5 foreign key (video_id) references video
+Hibernate: alter table video_tagit add constraint FKg7dxw5j2makmovseqbfomcoyx foreign key (video_id) references video
+2019-12-09 21:29:25.976  INFO 16126 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-09 21:29:25.985  INFO 16126 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-09 21:29:26.518  INFO 16126 --- [    Test worker] l.repository.BookRepositoryTest          : Started BookRepositoryTest in 4.384 seconds (JVM running for 6.006)
+2019-12-09 21:29:26.543  INFO 16126 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@760d26d1 testClass = BookRepositoryTest, testInstance = lukuvinkkikirjasto.repository.BookRepositoryTest@28b7f36a, testMethod = bookRepositoryWorks@BookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6a4eb158 testClass = BookRepositoryTest, locations = '{}', classes = '{class lukuvinkkikirjasto.Main}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@10575113, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ed69e92f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4d65ac28, [ImportsContextCustomizer@4c4f6f98 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@f54f2fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@51add917, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@57a15a79]; rollback [true]
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into book (author, title, type, edition, isbn, year, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select book0_.id as id1_6_, book0_.author as author2_6_, book0_.title as title3_6_, book0_.type as type4_6_, book0_.edition as edition5_6_, book0_.isbn as isbn6_6_, book0_.year as year7_6_ from book book0_
+2019-12-09 21:29:26.995  INFO 16126 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@760d26d1 testClass = BookRepositoryTest, testInstance = lukuvinkkikirjasto.repository.BookRepositoryTest@28b7f36a, testMethod = bookRepositoryWorks@BookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6a4eb158 testClass = BookRepositoryTest, locations = '{}', classes = '{class lukuvinkkikirjasto.Main}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@10575113, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ed69e92f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4d65ac28, [ImportsContextCustomizer@4c4f6f98 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@f54f2fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@51add917, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6</a> at 09-Dec-2019 21:29:27</p>
+</div>
+</div>
+</body>
+</html>
