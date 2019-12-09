@@ -37,7 +37,7 @@ public class VideoRepositoryTest {
         video.setUrl(url);
         video.setComment(comment);
         video.setRelatedCourses(relatedCourses);
-        // Testentitymanager inserts blogpost in DB
+        // Testentitymanager inserts video in DB
         entityManager.persist(video);
         entityManager.flush();
         

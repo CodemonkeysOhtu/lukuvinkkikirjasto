@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'jacoco'
 
 project.ext {
-    cucumberVersion = "1.2.6"
+    cucumberVersion = "4.7.4"
     junitVersion = "4.12"
 }
 
