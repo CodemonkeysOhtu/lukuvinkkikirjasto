@@ -54,3 +54,5 @@ or
 [Lukuvinkkikirjasto application](https://lukuvinkkikirjasto.netlify.com/)
 
 [Backend in Heroku (only API)](https://lukuvinkkikirjasto-ohtu.herokuapp.com/)
+
+[License](LICENSE)
