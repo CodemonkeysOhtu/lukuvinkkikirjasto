@@ -2,8 +2,8 @@ package lukuvinkkikirjasto.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import lukuvinkkikirjasto.entity.Book;
-import lukuvinkkikirjasto.service.BookService;
+import lukuvinkkikirjasto.entity.Blogpost;
+import lukuvinkkikirjasto.service.BlogpostService;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import org.junit.Test;
@@ -20,29 +20,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(BookController.class)
-public class BookControllerTest {
+@WebMvcTest(BlogpostController.class)
+public class BlogpostControllerTest {
     
     @Autowired
     private MockMvc mvc;
     
     @MockBean
-    private BookService bookService;
+    private BlogpostService blogpostService;
     
     @Test
-    public void givenBooks_whenGetBooks_thenReturnsJsonArray() throws Exception {
-        Book book = new Book();
-        book.setAuthor("Robert Martin");
+    public void givenBlogposts_whenGetBlogposts_thenReturnsJsonArray() throws Exception {
+        Blogpost blogpost = new Blogpost();
+        blogpost.setAuthor("Amit Solanki");
         
-        List<Book> books = new ArrayList<>();
-        books.add(book);
+        List<Blogpost> blogposts = new ArrayList<>();
+        blogposts.add(blogpost);
         
-        given(bookService.getBooks()).willReturn(books);
+        given(blogpostService.getBlogposts()).willReturn(blogposts);
         
-        mvc.perform(MockMvcRequestBuilders.get("/books").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/blogposts").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].author", is(book.getAuthor())));
+                .andExpect(jsonPath("$[0].author", is(blogpost.getAuthor())));
         
     }
     

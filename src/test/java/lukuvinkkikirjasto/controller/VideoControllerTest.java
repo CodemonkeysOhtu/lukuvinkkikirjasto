@@ -2,8 +2,8 @@ package lukuvinkkikirjasto.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import lukuvinkkikirjasto.entity.Book;
-import lukuvinkkikirjasto.service.BookService;
+import lukuvinkkikirjasto.entity.Video;
+import lukuvinkkikirjasto.service.VideoService;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import org.junit.Test;
@@ -20,29 +20,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(BookController.class)
-public class BookControllerTest {
+@WebMvcTest(VideoController.class)
+public class VideoControllerTest {
     
     @Autowired
     private MockMvc mvc;
     
     @MockBean
-    private BookService bookService;
+    private VideoService videoService;
     
     @Test
-    public void givenBooks_whenGetBooks_thenReturnsJsonArray() throws Exception {
-        Book book = new Book();
-        book.setAuthor("Robert Martin");
+    public void givenVideos_whenGetVideos_thenReturnsJsonArray() throws Exception {
+        Video video = new Video();
+        video.setUrl("https://youtu.be/Z9QbYZh1YXY");
         
-        List<Book> books = new ArrayList<>();
-        books.add(book);
+        List<Video> videos = new ArrayList<>();
+        videos.add(video);
         
-        given(bookService.getBooks()).willReturn(books);
+        given(videoService.getVideos()).willReturn(videos);
         
-        mvc.perform(MockMvcRequestBuilders.get("/books").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/videos").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].author", is(book.getAuthor())));
+                .andExpect(jsonPath("$[0].url", is(video.getUrl())));
         
     }
     

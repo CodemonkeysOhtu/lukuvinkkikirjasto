@@ -2,8 +2,8 @@ package lukuvinkkikirjasto.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import lukuvinkkikirjasto.entity.Book;
-import lukuvinkkikirjasto.service.BookService;
+import lukuvinkkikirjasto.entity.Article;
+import lukuvinkkikirjasto.service.ArticleService;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import org.junit.Test;
@@ -20,29 +20,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(BookController.class)
-public class BookControllerTest {
+@WebMvcTest(ArticleController.class)
+public class ArticleControllerTest {
     
     @Autowired
     private MockMvc mvc;
     
     @MockBean
-    private BookService bookService;
+    private ArticleService articleService;
     
     @Test
-    public void givenBooks_whenGetBooks_thenReturnsJsonArray() throws Exception {
-        Book book = new Book();
-        book.setAuthor("Robert Martin");
+    public void givenArticles_whenGetArticles_thenReturnsJsonArray() throws Exception {
+        Article article = new Article();
+        article.setTitle("An Introduction To: Agile Software Development");
         
-        List<Book> books = new ArrayList<>();
-        books.add(book);
+        List<Article> articles = new ArrayList<>();
+        articles.add(article);
         
-        given(bookService.getBooks()).willReturn(books);
+        given(articleService.getArticles()).willReturn(articles);
         
-        mvc.perform(MockMvcRequestBuilders.get("/books").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/articles").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].author", is(book.getAuthor())));
+                .andExpect(jsonPath("$[0].title", is(article.getTitle())));
         
     }
     
