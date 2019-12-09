@@ -55,6 +55,8 @@ or
 
 [Backend in Heroku (only API)](https://lukuvinkkikirjasto-ohtu.herokuapp.com/)
 
-[Unit tests](/documentation/tests/junit_test_summary.png)
+[Backend unit tests](/documentation/tests/junit_test_summary.png)
+
+[Frontend test coverage](https://lukuvinkkikirjasto-coverage.netlify.com/)
 
 [License](LICENSE)
