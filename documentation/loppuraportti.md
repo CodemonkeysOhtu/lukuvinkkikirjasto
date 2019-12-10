@@ -8,7 +8,7 @@ Itse koodin kirjoittaminen kun ympäristö on pystyssä.
 
 
 ### Mikä meni huonosti
-
+CircleCI
 
 
 ### Mitä opittiin, mitä olisi haluttu oppia, mikä oli turhaa
@@ -17,4 +17,5 @@ Suunnittelun ja dokumentaation tärkeys tiimityöskentelyssä.
 
 ### Osallistujat
 
-Mikko Takala
+Mikko Takala,
+Yusif Salam-zade
