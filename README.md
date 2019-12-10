@@ -70,5 +70,8 @@ or
 [Frontend test coverage](https://lukuvinkkikirjasto-coverage.netlify.com/)
 
 
+# Loppuraportti
+
+[Loppuraportti](https://github.com/CodemonkeysOhtu/lukuvinkkikirjasto/blob/master/documentation/loppuraportti.md)
 
 
