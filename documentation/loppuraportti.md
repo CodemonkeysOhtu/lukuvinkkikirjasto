@@ -15,6 +15,6 @@ Itse koodin kirjoittaminen kun ympäristö on pystyssä.
 
 Suunnittelun ja dokumentaation tärkeys tiimityöskentelyssä.
 
-###Osallistujat
+### Osallistujat
 
 Mikko Takala
