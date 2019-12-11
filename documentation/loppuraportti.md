@@ -1,28 +1,32 @@
-### Ongelmia
+# Loppuraportti
 
-Erilaiset konfiguraatiot; vaikea arvioida niihin kuluvaa aikaa.  
-Backend ja frontend API:en dokumentaatiot olisi voinut tehdä aikaisemmin kun aluksi teimme ne toimimaan hieman erilailla.
+## Ongelmia
 
-### Mikä meni hyvin
+* Erilaiset konfiguraatiot; vaikea arvioida niihin kuluvaa aikaa.  
+* Backend ja frontend API:en dokumentaatiot olisi voinut tehdä aikaisemmin kun aluksi teimme ne toimimaan hieman erilailla.
 
-Itse koodin kirjoittaminen kun ympäristö on pystyssä.  
-Scrum osuus työssä meni hyvin. Saimme aina jaettua hyvin tehtävät kaikille ja niitä tuli juuri sopivasti että saatiin valmiiksi sprinteissä. Välillä siirtelimme hieman töitä jos aika menasi loppua jollain tai tuntui että toinen voisi olla parempi tekemään sen. Työn seuraaminenkin sujui loistavasti. Kaikki merkitsi tunnit ja tehdyt tehtävät hyvin joka helpotti työn seuraamista. Muokkasimme aina vaadittua aikaa jopa nostamalla kun huomasimme että CircleCI kestääkin kauemin kuin odottettiin.  
-Kommunikointi Slackissä sujui hyvin. CircleCI oli yhdistetty sinne joten buildaus tiedot saatiin hyvin kaikkien näkyville.  
-Gitin käyttö. Aina uusi branchi ominaisuuksille.  
+## Mikä meni hyvin
 
-### Mikä meni huonosti
+* Itse koodin kirjoittaminen kun ympäristö on pystyssä.  
+* Scrum osuus työssä meni hyvin. Saimme aina jaettua hyvin tehtävät kaikille ja niitä tuli juuri sopivasti että saatiin valmiiksi sprinteissä. Välillä siirtelimme hieman töitä jos aika meinasi loppua jollain tai tuntui että toinen voisi olla parempi tekemään sen. 
+* Työn seuraaminenkin sujui loistavasti. Kaikki merkitsi tunnit ja tehdyt tehtävät hyvin joka helpotti työn seuraamista. Muokkasimme aina vaadittua aikaa jopa nostamalla kun huomasimme että CircleCI kestääkin kauemin kuin odottettiin.  
+* Kommunikointi Slackissä sujui hyvin. CircleCI oli yhdistetty sinne joten buildaus tiedot saatiin hyvin kaikkien näkyville.  
+* Gitin käyttö. Aina uusi branchi ominaisuuksille.  
 
-CircleCI
+## Mikä meni huonosti
 
+* CircleCI:n kanssa riitti tekemistä
+* Backendin testikattavuusraporttia saatu näkymään kivasti visuaalisena mihinkään dashboard-työkaluun
 
-### Mitä opittiin, mitä olisi haluttu oppia, mikä oli turhaa
+## Mitä opittiin, mitä olisi haluttu oppia, mikä oli turhaa
 
-Suunnittelun ja dokumentaation tärkeys tiimityöskentelyssä.  
-Näin lyhyessä projektissa tiimi työskentely rupesin sujumaan lopussa joten näimme hyvin millaista se on aluksi.  
-Teknisestä velasta ei tarvinnut välittää hirveästi kun projekti oli niin pieni (emme kyllä hirveästi ottaneet teknistä velkaa missään vaiheessa).  
+* Suunnittelun ja dokumentaation tärkeys tiimityöskentelyssä. Kun suuntaviivat teknologioista ja toteutusmallista on tiedossa, on hyvä dokumentoida suunnitelmat ja lopullinen toteutus edes lyhyesti Githubiin, jotta kaikilla on tieto toteutuksen yksityiskohdista. 
+* Oli hienoa, että näin lyhyessä projektissa tiimityöskentely rupesi sujumaan loppua kohden. Aluksi oli hieman hakemista, nyt näki hyvin miten tekeminen kehittyi vähitellen.  
+* Teknisestä velasta ei tarvinnut välittää hirveästi kun projekti oli niin pieni (emme kyllä hirveästi ottaneet teknistä velkaa missään vaiheessa).  
 
-### Osallistujat
+## Osallistujat
 
 Mikko Takala,
 Yusif Salam-zade,
 Elias Lankinen
+Jari Salojuuri
