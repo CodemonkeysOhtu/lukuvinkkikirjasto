@@ -15,8 +15,9 @@
 
 ## Mikä meni huonosti
 
-* CircleCI:n kanssa riitti tekemistä
-* Backendin testikattavuusraporttia saatu näkymään kivasti visuaalisena mihinkään dashboard-työkaluun
+* CircleCI:n kanssa riitti tekemistä.
+* Backendin testikattavuusraporttia ei saatu näkymään kivasti visuaalisena mihinkään dashboard-työkaluun.
+* Testaus oli aika hankalaa ja jäi hieman keskeneräiseksi. Erityisesti kattavampi integraatiotestaus jäi tällä aikataululla tekemättä.  
 
 ## Mitä opittiin, mitä olisi haluttu oppia, mikä oli turhaa
 
@@ -26,7 +27,7 @@
 
 ## Osallistujat
 
-Mikko Takala,
-Yusif Salam-zade,
-Elias Lankinen
-Jari Salojuuri
+* Mikko Takala
+* Yusif Salam-zade
+* Elias Lankinen
+* Jari Salojuuri
