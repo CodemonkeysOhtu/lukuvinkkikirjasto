@@ -19,6 +19,7 @@
 ## Mikä meni huonosti
 
 * CircleCI:n kanssa riitti tekemistä.
+* Projektin/Backendin deployaaminen Herokuun, vei paljon aikaa ekasta sprintistä ja jonkin verran toisestakin, lopulta päädyttiinkin muuttamaan projektin rakennetta Heroku+Netlify ja omat repositoriot Back- ja Frontendille, jonka jälkeen homma alkoi sujua.
 * Frontendin testaaminen tuntui turhauttavalta, erityisesti koska Cypress testien pyörittäminen Circle CI:ssä tuntui hankalalta
 * Backendin testikattavuusraporttia ei saatu näkymään kivasti visuaalisena mihinkään dashboard-työkaluun.
 * Testaus oli aika hankalaa ja jäi hieman keskeneräiseksi. Erityisesti kattavampi integraatiotestaus jäi tällä aikataululla tekemättä.  
