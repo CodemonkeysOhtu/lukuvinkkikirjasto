@@ -5,6 +5,8 @@
 * Erilaiset konfiguraatiot; vaikea arvioida niihin kuluvaa aikaa.  
 * Backend ja frontend API:en dokumentaatiot olisi voinut tehdä aikaisemmin kun aluksi teimme ne toimimaan hieman erilailla.
 
+![backlog](https://raw.githubusercontent.com/CodemonkeysOhtu/lukuvinkkikirjasto/master/documentation/assets/backlog.png)
+
 ## Mikä meni hyvin
 
 * Itse koodin kirjoittaminen kun ympäristö on pystyssä.  
